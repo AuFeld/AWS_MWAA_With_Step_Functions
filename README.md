@@ -59,7 +59,7 @@ EMR = Elastic MapReduce
 
 ## Architecture
 
-![Architecture](images/architecture.png)
+![Architecture](/assets/architecture.png)
 
 ## Prerequisites
 
