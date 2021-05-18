@@ -1,6 +1,6 @@
 # Build workflows with AWS MWAA, AWS Step Functions, AWS Glue, and AWS EMR
 
-## Lingo Breakdown
+## A Quick Lingo Breakdown
 
 #### AWS MWAA
 
@@ -10,6 +10,7 @@ MWAA = Managed Workflows for Apache Airflow
 
 [AWS MWAA Docs](https://docs.aws.amazon.com/mwaa/latest/userguide/what-is-mwaa.html)
 
+--- 
 
 #### AWS Step Functions
 
@@ -21,17 +22,23 @@ All work in the state machine is done by tasks. A task performs work by using an
 
 [AWS Step Functions Docs](https://aws.amazon.com/step-functions/?step-functions.sort-by=item.additionalFields.postDateTime&step-functions.sort-order=desc)
 
+--- 
+
 #### AWS Glue
 
 AWS Glue is a relatively new fully managed serverless Extract, Transform, and Load (ETL) service that has enormous potential for teams across enterprise organizations, from engineering to data to analytics. Glue combines the speed and power of Apache Spark with the lightweight data organization of Hive metastores to — you guessed it — glue together disparate data sources from across AWS.
 
 Feel free to check out the AWS docs to learn more about [AWS Glue](https://aws.amazon.com/glue/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc).
 
+--- 
+
 #### AWS EMR
 
 EMR = Elastic MapReduce
 
 [My EMR Docs](https://github.com/AuFeld/Data_Engineering_Projects/tree/main/EMR)
+
+--- 
 
 ## Code repo structure
 
