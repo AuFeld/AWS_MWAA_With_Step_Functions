@@ -15,7 +15,7 @@ The integration with other AWS services makes it easier to manage communication 
 
 Another useful feature is a centralized storage of configuration options. Airflow is configured to a large extent by setting variables in the airflow.cfg file. With MWAA, you can manage those settings directly from the management console. Normally, after having changed your configuration variables, you would have to restart your scheduler and worker nodes to apply the changes. With MWAA, it’s performed under the hood without bringing down your Airflow environment.
 
-[mwaa_configuration](/assets/mwaa_config.png)
+![mwaa_configuration](/assets/mwaa_config.png)
 
 <li>Extensibility via Plugins</li> 
 
@@ -39,11 +39,11 @@ sensors/
 
 <li>Convenient Logging</li>
 
-One of my favorite aspects of MWAA is how easy it is to configure logging to CloudWatch. Setting this up yourself would require a lot of work to configure a CloudWatch Agent on all instances to stream the logs to CloudWatch, and ensure proper log groups for all components (scheduler logs, worker nodes logs, web server logs, and the actual logs from your tasks).
+One of my favorite features of MWAA is how easy it is to configure logging to CloudWatch. Setting this up yourself would require a lot of work to configure a CloudWatch Agent on all instances to stream the logs to CloudWatch, and ensure proper log groups for all components (scheduler logs, worker nodes logs, web server logs, and the actual logs from your tasks).
 
 <li>Governance Out of the Box</li>
 
-My second favorite feature is the integration of MWAA with IAM: only authorized IAM users can log into your Airflow UI. This is enabled by default without having to implement any custom Auth logic. When I open the link to the Airflow UI within a private browser window, we are not able to access the UI until we sign in with a user who has access to the AWS management console. From the security perspective, I would definitely recommend using MWAA rather than deploying Airfow yourself with EC2. AWS ensured that any data processed within MWAA is by default encrypted with KMS, and you get the Single-Sign-On that works out of the box. Similarly, you don’t need to worry about Security Groups, and a domain name is automatically assigned to your environment.
+Another feature is the integration of MWAA with IAM: only authorized IAM users can log into your Airflow UI. This is enabled by default without having to implement any custom Auth logic. When I open the link to the Airflow UI within a private browser window, we are not able to access the UI until we sign in with a user who has access to the AWS management console. From the security perspective, I would definitely recommend using MWAA rather than deploying Airfow yourself with EC2. AWS ensured that any data processed within MWAA is by default encrypted with KMS, and you get the Single-Sign-On that works out of the box. Similarly, you don’t need to worry about Security Groups, and a domain name is automatically assigned to your environment.
 
 <li>CI/CD pipelines can be easily established</li>
 
